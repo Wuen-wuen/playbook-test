@@ -1,0 +1,12 @@
+---
+- name: deploy ngx
+  hosts: all
+  gather_fact: no
+  tasks:
+    - name: get ngx
+      get_url: 
+        url: https://mirrors.huaweicloud.com/nginx/nginx-1.21.1.tar.gz
+        dest: /root/nginx
+        mode: 0755
+        force: yes
+        
