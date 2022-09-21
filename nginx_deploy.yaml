@@ -1,7 +1,7 @@
 ---
 - name: deploy ngx
   hosts: all
-  gather_fact: no
+  gather_facts: no
   tasks:
     - name: get ngx
       get_url: 
