@@ -1,8 +1,0 @@
----
-- name: shell
-  hosts: all
-  gather_facts: no
-  tasks:
-    - name: task1
-      shell:
-        hostname
