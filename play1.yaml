@@ -1,11 +1,8 @@
 ---
-- name: play1
+- name: shell
   hosts: all
-  gather_facts: false
+  gather_facts: no
   tasks:
     - name: task1
-      debug:
-        msg: "hello task1 in play2"
-    - name: task2
-      debug:
-        msg: "hello task2 in play2"
+      shell:
+        hostname
